@@ -1,0 +1,42 @@
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    cursor: pointer;
+    font-family: var(--font-Museo);
+    font-size: 35px;
+}
+
+.navbar-collapse {
+    justify-content: end !important;
+}
+
+.navbar-nav-list {
+    margin-right: 3rem;
+}
+
+.nav-link {
+    border-radius: 5px;
+    margin-right: 2rem;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+@media screen and (max-width: 1400px) {
+    .nav-link {
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navbar-brand {
+        font-size: 25px;
+    }
+
+    .nav-link {
+        border-radius: 5px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

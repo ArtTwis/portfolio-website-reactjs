@@ -1,0 +1,253 @@
+.header-section,
+.aboutme-section,
+.see-myself-section {
+  margin-bottom: 10rem;
+}
+
+.header-content-parent,
+.see-myself-content-parent {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-content {
+  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header-content h3 {
+  margin-bottom: 1rem;
+}
+
+.header-content h1 {
+  margin-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.header-content h5 {
+  margin-bottom: 1rem;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+}
+
+.header-scroll-indication {
+  margin-top: 3rem;
+  padding: 10px;
+  border-bottom: 1px solid;
+}
+
+.header-scroll-indication h6 {
+  letter-spacing: 4px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.header-image {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sci-parent {
+  margin-bottom: 1rem;
+}
+
+.sci {
+  margin-top: 20px;
+  display: flex;
+}
+
+.sci li {
+  list-style: none;
+}
+
+.sci li a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  text-decoration: none;
+  border-radius: 7px;
+}
+
+.sci li a .fab {
+  font-size: 16px;
+}
+
+.header_btn_col a {
+  margin-left: 1rem;
+}
+
+@media (max-width: 1400px) {
+  .header-content {
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .header-content {
+    width: 100%;
+    padding: 2rem;
+    align-items: center;
+  }
+
+  .header-content h3 {
+    margin-bottom: 0.5rem;
+  }
+
+  .header-content h1 {
+    margin-bottom: 1rem;
+    font-weight: normal;
+  }
+
+  .header-content h5 {
+    font-size: 18px;
+    font-weight: lighter;
+    word-spacing: 1px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .header-content-parent {
+    flex-direction: column-reverse;
+  }
+
+  .see-myself-content-parent {
+    flex-direction: column;
+  }
+
+  .header-image {
+    width: 100%;
+  }
+
+  .header-image figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-image figure img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+.aboutme-section h1 {
+  margin-bottom: 3rem;
+}
+
+.aboutme-section h2 {
+  letter-spacing: 2px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.aboutme-section p {
+  margin-bottom: 3rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-size: 18px;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+}
+
+.technologies-parent-dv {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.technology-item {
+  padding: 12px 18px;
+  margin: 8px 16px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.technology-card-dark {
+  backdrop-filter: blur(25px) saturate(176%);
+  -webkit-backdrop-filter: blur(25px) saturate(176%);
+  background-color: rgba(92, 92, 100, 0.74);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.technology-card-light {
+  backdrop-filter: blur(21px) saturate(151%);
+  -webkit-backdrop-filter: blur(21px) saturate(151%);
+  background-color: rgba(220, 222, 186, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.technology-item img {
+  height: 48px !important;
+  width: 48px !important;
+}
+
+.technology-item h6 {
+  margin: 0;
+  margin-left: 8px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+  .aboutme-section h2 {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .aboutme-section p {
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 15px;
+  }
+
+  .technologies-parent-dv {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .technology-item {
+    padding: 6px 12px;
+    margin: 6px 12px;
+  }
+
+  .technology-item img {
+    height: 25px !important;
+    width: 25px !important;
+  }
+
+  .technology-item h6 {
+    font-size: 12px;
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}

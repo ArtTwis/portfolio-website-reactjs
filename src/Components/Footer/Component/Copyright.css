@@ -1,0 +1,16 @@
+.copyrightText {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyrightText p {
+    margin: 0;
+    text-align: center;
+}
+
+.copyrightText a {
+    text-decoration: none;
+}
