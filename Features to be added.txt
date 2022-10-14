@@ -1,1 +1,13 @@
+Timeline :- What have done in each past year.    ref: https://www.dalelarroder.com/about
+
 Recruitment Status :- Still Not Looking
+
+Contact form 
+
+git repos - projects
+
+Instead of social media link use "find me on"
+
+add carreer section ref: https://dinataklit.github.io/DinaTaklitPortfolio/
+
+add certificate section  ref: https://dinataklit.github.io/DinaTaklitPortfolio/

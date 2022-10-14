@@ -2,14 +2,14 @@ import React from 'react';
 import Base from '../Base';
 import Header from './Components/Header';
 import AboutMe from './Components/AboutMe';
-import SeeMyself from './Components/SeeMyself';
+import Career from './Components/Career';
 
 const Home = () => {
   return (
     <Base>
       <Header />
       <AboutMe />
-      <SeeMyself />
+      <Career />
     </Base>
   );
 };

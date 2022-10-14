@@ -251,3 +251,128 @@
   transform: translateY(0px);
   opacity: 1;
 }
+
+#career {
+  margin-bottom: 4rem;
+}
+
+.career-section-title {
+  margin-bottom: 4rem;
+}
+
+#career .card {
+  border: none;
+  padding: 1rem 1rem;
+  position: relative;
+}
+
+.edu-card,
+.exp-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+}
+
+#career .card h2 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+#career .card .edu-content,
+#career .card .exp-content {
+  text-align: center;
+}
+
+#career .card .edu-content .timeline,
+#career .card .exp-content .timeline {
+  border-left: 0.4rem solid;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  padding: 4rem 0 4rem 4rem;
+  text-align: left;
+  list-style: outside none none;
+}
+
+#career .card ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#career .card .edu-content .timeline .event,
+#career .card .exp-content .timeline .event {
+  border-bottom: 1px dashed;
+  padding-bottom: 2rem;
+  margin-bottom: 4rem;
+  position: relative;
+  list-style: none;
+}
+
+#career .card .edu-content .timeline .event:last-of-type,
+#career .card .exp-content .timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+
+#career .card .edu-content .timeline .event:after,
+#career .card .exp-content .timeline .event:after {
+  left: -5rem;
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  content: '';
+  top: 5px;
+}
+
+.eduDark:after {
+  background: #a1ff1a;
+}
+
+.eduLight:after {
+  background: #13bb00;
+}
+
+#career .card .edu-content .timeline .event:before,
+#career .card .edu-content .timeline .event:after,
+#career .card .exp-content .timeline .event:before,
+#career .card .exp-content .timeline .event:after {
+  position: absolute;
+  display: block;
+}
+
+#career .card .edu-content .timeline .event .event-headline p,
+#career .card .exp-content .timeline .event .event-headline p {
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+}
+
+#career .card .edu-content .timeline .event .event-headline .event-title,
+#career .card .exp-content .timeline .event .event-headline .event-org {
+  letter-spacing: 1.5px;
+  font-size: 1.4em;
+}
+
+#career .card .edu-content .timeline .event .event-headline .event-city,
+#career .card .exp-content .timeline .event .event-headline .event-title,
+#career .card .exp-content .timeline .event .event-headline .event-location {
+  letter-spacing: 1px;
+  font-size: 1em;
+}
+
+#career .card .edu-content .timeline .event .event-headline .event-course,
+#career .card .edu-content .timeline .event .event-headline .eventwhen,
+#career .card .exp-content .timeline .event .event-headline .event-project,
+#career .card .exp-content .timeline .event .event-headline .event-keyword,
+#career .card .exp-content .timeline .event .event-headline .eventwhen {
+  letter-spacing: 0.5px;
+  font-size: 0.8em;
+}
