@@ -1,6 +1,5 @@
 .header-section,
-.aboutme-section,
-.see-myself-section {
+.aboutme-section {
   margin-bottom: 10rem;
 }
 
@@ -32,6 +31,7 @@
   word-spacing: 2px;
   letter-spacing: 2px;
   font-weight: lighter;
+  font-family: var(--font-MuktaRegular);
 }
 
 .header-scroll-indication {
@@ -152,18 +152,10 @@
   margin-bottom: 1.5rem;
 }
 
-.aboutme-section p {
-  margin-bottom: 3rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  font-size: 18px;
-  letter-spacing: 2px;
-  word-spacing: 1px;
-}
-
 .technologies-parent-dv {
   margin-left: 5rem;
   margin-right: 5rem;
+  margin-bottom: 3rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -173,6 +165,7 @@
   padding: 12px 18px;
   margin: 8px 16px;
   border-radius: 7px;
+  border-left: 7px solid;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -220,11 +213,6 @@
     font-size: 15px;
   }
 
-  .technologies-parent-dv {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
   .technology-item {
     padding: 6px 12px;
     margin: 6px 12px;
@@ -252,12 +240,213 @@
   opacity: 1;
 }
 
+.rate-myself-container {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.rate-myself-container .card {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.rate-myself-container .card .percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.rate-myself-container .card .percent svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  transform: rotate(270deg);
+}
+
+.rate-myself-container .card .percent svg circle {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+  stroke-width: 2;
+  transform: translate(5px, 5px);
+}
+
+.rate-myself-container .card .percent svg circle:nth-child(2) {
+  stroke-width: 4;
+  stroke-dasharray: 440;
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 3.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.rate-myself-container .card .percent .dot {
+  position: absolute;
+  inset: 5px;
+  z-index: 10;
+}
+
+@keyframes animateDotJavascript {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    --percent: 85;
+    transform: rotate(calc(3.6deg * var(--percent)));
+  }
+}
+
+@keyframes animateDotNodeJS {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    --percent: 80;
+    transform: rotate(calc(3.6deg * var(--percent)));
+  }
+}
+
+@keyframes animateDotReactJS {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    --percent: 75;
+    transform: rotate(calc(3.6deg * var(--percent)));
+  }
+}
+
+@keyframes animateDotExpressJS {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    --percent: 90;
+    transform: rotate(calc(3.6deg * var(--percent)));
+  }
+}
+
+@keyframes animateDotMongoDB {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    --percent: 80;
+    transform: rotate(calc(3.6deg * var(--percent)));
+  }
+}
+
+@keyframes animateDotElasticSearch {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    --percent: 70;
+    transform: rotate(calc(3.6deg * var(--percent)));
+  }
+}
+
+.rate-myself-container .card .percent .dot::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.Javascript::before {
+  background: #ffd600;
+  box-shadow: 0 0 10px #ffd600, 0 0 30px #ffd600;
+}
+
+.NodeJS::before {
+  background: #21a366;
+  box-shadow: 0 0 10px #21a366, 0 0 30px #21a366;
+}
+
+.ReactJS::before {
+  background: #39c1d7;
+  box-shadow: 0 0 10px #39c1d7, 0 0 30px #39c1d7;
+}
+
+.ExpressJS::before {
+  background: #ffffff;
+  box-shadow: 0 0 10px #ffffff, 0 0 30px #ffffff;
+}
+
+.MongoDB::before {
+  background: #4caf50;
+  box-shadow: 0 0 10px #4caf50, 0 0 30px #4caf50;
+}
+
+.ElasticSearch::before {
+  background: #ffca28;
+  box-shadow: 0 0 10px #ffca28, 0 0 30px #ffca28;
+}
+
+.data {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  animation: fadeIn 1s linear forwards;
+  animation-delay: 3.5s;
+}
+
+.data h2 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+.data h2 span {
+  font-weight: 300;
+  font-size: 0.5em;
+}
+
+.data p {
+  font-weight: 300;
+  font-size: 0.6em;
+  margin-top: 5px;
+  line-height: 2px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 #career {
   margin-bottom: 4rem;
 }
 
-.career-section-title {
-  margin-bottom: 4rem;
+.aboutme-section,
+.career-section {
+  padding: 7rem 0;
 }
 
 #career .card {
@@ -376,3 +565,101 @@
   letter-spacing: 0.5px;
   font-size: 0.8em;
 }
+
+/* --------------------------------------------------------------------- */
+
+.relative {
+  position: relative;
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.leading-\[1\.15\] {
+  line-height: 1.15;
+}
+
+.introText {
+  transition: opacity 0.4s;
+  font-family: var(--font-MuktaBold);
+}
+
+@media (min-width: 1024px) {
+  .lg\:text-7xl {
+    font-size: 5rem;
+    line-height: 1;
+  }
+
+  .lg\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:text-6xl {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  .md\:py-28 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
+
+/* --------------------------------------------------------------------- */

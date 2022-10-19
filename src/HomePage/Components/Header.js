@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import AppThemeColor from '../../AppThemeColor';
 import { SocialMedia } from './Data/SocialMedia';
 import TypingText from './TypingText';
-import { useSelector } from 'react-redux';
 import DeveloperImageDark from '../../Assets/Images/svg/Developer1-dark.svg';
 import DeveloperImageLight from '../../Assets/Images/svg/Developer1-light.svg';
 import './css/HomeComponentStyle.css';

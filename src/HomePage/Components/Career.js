@@ -11,7 +11,7 @@ const Career = () => {
     AppThemeColor[app_theme];
 
   return (
-    <section id='career'>
+    <section id='career' className='career-section'>
       <div className='container'>
         <div className='section-header row justify-content-center'>
           <div className='col-12'>

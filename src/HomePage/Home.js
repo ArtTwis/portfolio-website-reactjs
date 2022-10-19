@@ -1,15 +1,17 @@
 import React from 'react';
 import Base from '../Base';
 import Header from './Components/Header';
-import AboutMe from './Components/AboutMe';
+import Passion from './Components/Passion';
 import Career from './Components/Career';
+import SkillSet from './Components/SkillSet';
 
 const Home = () => {
   return (
     <Base>
       <Header />
-      <AboutMe />
+      <Passion />
       <Career />
+      <SkillSet />
     </Base>
   );
 };
