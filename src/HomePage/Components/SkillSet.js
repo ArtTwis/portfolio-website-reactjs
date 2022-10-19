@@ -41,7 +41,7 @@ const SkillSet = () => {
           return (
             <div
               className='card'
-              style={{ backgroundColor: techCardBG }}
+              style={{ backgroundColor: 'transparent' }}
               key={'tech-icon-' + techItem.technology + index}>
               <div className='percent'>
                 <div
