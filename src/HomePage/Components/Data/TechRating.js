@@ -1,27 +1,39 @@
 export const TechRating = [
   {
     technology: 'Javascript',
-    rating: 4,
+    rating: 85,
+    color: '#ffd600',
+    dotanimation: 'animateDotJavascript',
   },
   {
     technology: 'NodeJS',
-    rating: 3,
-  },
-  {
-    technology: 'ExpressJS',
-    rating: 4,
+    rating: 80,
+    color: '#21a366',
+    dotanimation: 'animateDotNodeJS',
   },
   {
     technology: 'ReactJS',
-    rating: 3,
+    rating: 75,
+    color: '#39c1d7',
+    dotanimation: 'animateDotReactJS',
+  },
+  {
+    technology: 'ExpressJS',
+    rating: 90,
+    color: '#ffffff',
+    dotanimation: 'animateDotExpressJS',
   },
   {
     technology: 'MongoDB',
-    rating: 4,
+    rating: 80,
+    color: '#4caf50',
+    dotanimation: 'animateDotMongoDB',
   },
   {
     technology: 'ElasticSearch',
-    rating: 3,
+    rating: 70,
+    color: '#ffca28',
+    dotanimation: 'animateDotElasticSearch',
   },
 ];
 
