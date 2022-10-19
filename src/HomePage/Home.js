@@ -4,6 +4,7 @@ import Header from './Components/Header';
 import Passion from './Components/Passion';
 import Career from './Components/Career';
 import SkillSet from './Components/SkillSet';
+import Projects from './Components/Projects';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Passion />
       <Career />
       <SkillSet />
+      <Projects />
     </Base>
   );
 };
