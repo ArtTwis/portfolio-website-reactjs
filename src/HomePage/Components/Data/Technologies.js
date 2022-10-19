@@ -18,6 +18,9 @@ import typescriptIcon from '../../../Assets/Icons/programming/typescript-icon-48
 import expressIcon from '../../../Assets/Icons/programming/expressjs-icon.svg';
 import tailwindIcon from '../../../Assets/Icons/programming/tailwind-icon.svg';
 import postmanIcon from '../../../Assets/Icons/programming/postman-icon.svg';
+import graphqlIcon from '../../../Assets/Icons/programming/graphql-icon-48.png';
+import nextjsIcon from '../../../Assets/Icons/programming/nextjs-icon-48.png';
+import nestjsIcon from '../../../Assets/Icons/programming/nestjs-icon-48.png';
 
 export const Technologies = [
   {
@@ -41,8 +44,16 @@ export const Technologies = [
     techicon: expressIcon,
   },
   {
-    technology: 'ReactJs',
+    technology: 'ReactJS',
     techicon: reactjsIcon,
+  },
+  {
+    technology: 'NextJS',
+    techicon: nextjsIcon,
+  },
+  {
+    technology: 'NestJS',
+    techicon: nestjsIcon,
   },
   {
     technology: 'Python',
@@ -71,6 +82,10 @@ export const Technologies = [
   {
     technology: 'MySQL',
     techicon: mysqlIcon,
+  },
+  {
+    technology: 'GraphQL',
+    techicon: graphqlIcon,
   },
   {
     technology: 'Firebase',

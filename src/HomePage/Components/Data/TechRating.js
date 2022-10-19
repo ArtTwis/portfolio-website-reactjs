@@ -17,12 +17,12 @@ export const TechRating = [
     color: '#39c1d7',
     dotanimation: 'animateDotReactJS',
   },
-  {
-    technology: 'ExpressJS',
-    rating: 90,
-    color: '#ffffff',
-    dotanimation: 'animateDotExpressJS',
-  },
+  // {
+  //   technology: 'ExpressJS',
+  //   rating: 90,
+  //   color: '#ffffff',
+  //   dotanimation: 'animateDotExpressJS',
+  // },
   {
     technology: 'MongoDB',
     rating: 80,
