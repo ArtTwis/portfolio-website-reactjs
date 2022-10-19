@@ -11,3 +11,6 @@ Instead of social media link use "find me on"
 add carreer section ref: https://dinataklit.github.io/DinaTaklitPortfolio/
 
 add certificate section  ref: https://dinataklit.github.io/DinaTaklitPortfolio/
+
+Platform for IT employees to share their stories.
+
