@@ -1,6 +1,6 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import AppThemeColor from '../../AppThemeColor';
+import React from "react";
+import { useSelector } from "react-redux";
+import AppThemeColor from "../../../AppThemeColor";
 
 const Passion = () => {
   const app_theme = useSelector((state) => state.appTheme);

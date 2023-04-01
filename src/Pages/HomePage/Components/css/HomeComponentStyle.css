@@ -16,6 +16,22 @@
   align-items: flex-start;
 }
 
+.header_recruitment_label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.recruitmentStatus {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 8px;
+  outline: none;
+}
+
 .header-content h3 {
   margin-bottom: 1rem;
 }
@@ -105,6 +121,7 @@
 
   .header-content h1 {
     margin-bottom: 1rem;
+    font-size: 21px;
     font-weight: normal;
   }
 
@@ -258,6 +275,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 7px;
+  border: none;
 }
 
 .rate-myself-container .card .percent {
@@ -366,7 +384,7 @@
 }
 
 .rate-myself-container .card .percent .dot::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -5px;
   left: 50%;
@@ -520,7 +538,7 @@
   border-radius: 50%;
   height: 1.5rem;
   width: 1.5rem;
-  content: '';
+  content: "";
   top: 5px;
 }
 
@@ -690,7 +708,7 @@
 }
 
 .projects-section .card .container::after {
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   position: absolute;
@@ -703,6 +721,10 @@
 /* background-image: linear-gradient(135deg, #2bdce3, #42ffdb); */
 /* background-image: linear-gradient(135deg, #ffab1d, #f8501c); */
 /* background-image: linear-gradient(135deg, #0100ec, #fb36f4); */
+
+.projects-section .card a {
+  text-decoration: none;
+}
 
 .card1 .container::after {
   background-image: linear-gradient(135deg, #a1ff1a 10%, #00f5ffb0 80%);
@@ -726,8 +748,7 @@
   padding: 20px 10px;
 }
 
-.projects-section .card .details > h3 {
-  color: #fff;
+.projects-section .card .details > a > h3 {
   font-weight: 600;
   font-size: 18px;
   margin: 10px 0 15px 0;
@@ -738,4 +759,8 @@
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
+}
+
+.project-see-more-btn {
+  border: 0;
 }

@@ -1,7 +1,7 @@
-import React from 'react';
-import AppThemeColor from '../../AppThemeColor';
-import Typewriter from 'typewriter-effect';
-import { useSelector } from 'react-redux';
+import React from "react";
+import AppThemeColor from "../../../AppThemeColor";
+import Typewriter from "typewriter-effect";
+import { useSelector } from "react-redux";
 
 const TypingText = () => {
   const app_theme = useSelector((state) => state.appTheme);
@@ -12,14 +12,14 @@ const TypingText = () => {
 
   return (
     <h1 style={{ color: textColor, filter: val }}>
-      {' '}
+      {" "}
       <Typewriter
         onInit={(typewriter) => {
           typewriter
-            .typeString('Full-Stack Developer')
+            .typeString("Full-Stack Developer")
             .pauseFor(2000)
             .deleteAll()
-            .typeString('Cloud Computing')
+            .typeString("Cloud Computing")
             .pauseFor(2000)
             .deleteAll()
             .start();

@@ -1,8 +1,8 @@
-import React from 'react';
-import AppThemeColor from '../../AppThemeColor';
-import { Education } from './Data/Education';
-import { Experience } from './Data/Experience';
-import { useSelector } from 'react-redux';
+import React from "react";
+import AppThemeColor from "../../../AppThemeColor";
+import { Education } from "./Data/Education";
+import { Experience } from "./Data/Experience";
+import { useSelector } from "react-redux";
 
 const Career = () => {
   const app_theme = useSelector((state) => state.appTheme);
@@ -40,9 +40,9 @@ const Career = () => {
                   {Education.map((edu, index) => {
                     return (
                       <li
-                        key={'edu-' + edu.institute + index}
+                        key={"edu-" + edu.institute}
                         className={`event  ${
-                          app_theme === 'dark' ? 'eduDark' : 'eduLight'
+                          app_theme === "dark" ? "eduDark" : "eduLight"
                         }`}
                         style={{ borderColor: cardBorderColor }}>
                         <div className='event-headline'>
@@ -89,9 +89,9 @@ const Career = () => {
                   {Experience.map((exp, index) => {
                     return (
                       <li
-                        key={'exp-' + exp.institute + index}
+                        key={"exp-" + exp.organization}
                         className={`event  ${
-                          app_theme === 'dark' ? 'eduDark' : 'eduLight'
+                          app_theme === "dark" ? "eduDark" : "eduLight"
                         }`}
                         style={{ borderColor: cardBorderColor }}>
                         <div className='event-headline'>

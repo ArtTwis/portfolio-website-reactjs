@@ -1,38 +1,95 @@
-import React, { useState } from 'react';
-import { useSelector } from 'react-redux';
-import AppThemeColor from '../../AppThemeColor';
-import { SocialMedia } from './Data/SocialMedia';
-import TypingText from './TypingText';
-import DeveloperImageDark from '../../Assets/Images/svg/Developer1-dark.svg';
-import DeveloperImageLight from '../../Assets/Images/svg/Developer1-light.svg';
-import './css/HomeComponentStyle.css';
+import React, { useState, useEffect } from "react";
+import { useSelector } from "react-redux";
+import AppThemeColor from "../../../AppThemeColor";
+import { SocialMedia } from "./Data/SocialMedia";
+import { firebaseDB } from "../../../firebase/firebase-config";
+import { collection, getDocs } from "@firebase/firestore";
+import TypingText from "./TypingText";
+import DeveloperImageDark from "../../../Assets/Images/svg/Developer1-dark.svg";
+import DeveloperImageLight from "../../../Assets/Images/svg/Developer1-light.svg";
+import "./css/HomeComponentStyle.css";
 
 const Header = () => {
   const app_theme = useSelector((state) => state.appTheme);
 
-  const { primaryColor, textColor, commonLightColor, commonDarkColor } =
-    AppThemeColor[app_theme];
+  const {
+    primaryColor,
+    textColor,
+    commonLightColor,
+    commonDarkColor,
+    dangerColor,
+  } = AppThemeColor[app_theme];
+
+  const [recruitmentStatus, setRecruitmentStatus] = useState("");
+
+  const [resumeLink, setResumeLink] = useState("#");
+
+  // const [error, setError] = useState(false);
 
   const [screenSize, setscreenSize] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const recruitmentCollectionRef = collection(firebaseDB, "recruitment");
+
+    const resumeCollectionRef = collection(firebaseDB, "resume");
+
+    (async () => {
+      const recruitmentData = await getDocs(recruitmentCollectionRef);
+
+      setRecruitmentStatus(
+        recruitmentData._snapshot.docs.keyedMap.root.value.data.value.mapValue
+          .fields.status.stringValue
+      );
+
+      const resumeData = await getDocs(resumeCollectionRef);
+      setResumeLink(
+        resumeData._snapshot.docs.keyedMap.root.value.data.value.mapValue.fields
+          .link.stringValue
+      );
+    })();
+  }, []);
 
   return (
     <header className='header-section'>
       <div className='row header-content-parent'>
         <div className='col-md-7 col-11 header-content'>
+          <div
+            style={{
+              display: screenSize > 1300 ? "block" : "none",
+            }}>
+            <h5
+              className='header_recruitment_label'
+              style={{
+                color:
+                  recruitmentStatus === "Not actively looking"
+                    ? primaryColor
+                    : dangerColor,
+              }}>
+              <div
+                className='recruitmentStatus'
+                style={{
+                  background:
+                    recruitmentStatus === "Not actively looking"
+                      ? primaryColor
+                      : dangerColor,
+                }}></div>{" "}
+              Recruitment Status : {recruitmentStatus}
+            </h5>
+          </div>
           <h3 className='header_greeting_label' style={{ color: textColor }}>
             Hi Peeps,
           </h3>
           <h1
             style={{
               color: primaryColor,
-              display: screenSize > 1300 ? 'none' : 'block',
+              display: screenSize > 1300 ? "none" : "block",
             }}>
             I'm a Software Engineer
           </h1>
           <div
             className='typing-text-parent'
             style={{
-              display: screenSize > 1300 ? 'block' : 'none',
+              display: screenSize > 1300 ? "block" : "none",
             }}>
             <TypingText />
           </div>
@@ -43,8 +100,8 @@ const Header = () => {
               draggable='false'
               src='https://twemoji.maxcdn.com/2/72x72/1f680.png'
               style={{
-                height: '15px',
-                width: '15px',
+                height: "15px",
+                width: "15px",
               }}
             />
             &nbsp; having an experience of building Software Applications with
@@ -57,7 +114,7 @@ const Header = () => {
           <div className='d-flex flex-column sci-parent'>
             <ul className='sci'>
               {SocialMedia.map((item, index) => (
-                <li key={'header_socialmedia_btn' + index}>
+                <li key={"header_socialmedia_btn" + index}>
                   <a
                     href={item.href}
                     style={{
@@ -81,11 +138,7 @@ const Header = () => {
               value='Get In Touch'>
               Get In Touch
             </button>
-            <a
-              href='https://drive.google.com/file/d/1YPN0KPjuVEbiQiOsy62ufsqq_FJQAsYV/view?usp=drivesdk'
-              download
-              rel='noreferrer'
-              target='_blank'>
+            <a href={resumeLink} download rel='noreferrer' target='_blank'>
               <button
                 style={{
                   backgroundColor: primaryColor,
@@ -108,7 +161,7 @@ const Header = () => {
           <figure>
             <img
               src={
-                app_theme === 'dark' ? DeveloperImageDark : DeveloperImageLight
+                app_theme === "dark" ? DeveloperImageDark : DeveloperImageLight
               }
               alt='Moon'
               className='img-fluid'
