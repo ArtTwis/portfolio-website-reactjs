@@ -12,6 +12,7 @@ const AppThemeColor = {
     commonLightColor: '#ffffff',
     commonDarkColor: '#000000',
     cardBorderColor: '#858585',
+    dangerColor: '#FF3131',
   },
   light: {
     bodyBgColor: '#EAEBD5',
@@ -26,6 +27,7 @@ const AppThemeColor = {
     commonLightColor: '#ffffff',
     commonDarkColor: '#000000',
     cardBorderColor: '#444444',
+    dangerColor: '#FF3131',
   },
 };
 
