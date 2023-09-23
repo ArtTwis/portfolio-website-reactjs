@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <Provider store={store}>
-    <Router>
+    <Router basename='/portfolio-website-reactjs'>
       <Routes>
         <Route path='/' exact element={<Home />} />
         <Route path='/mystory' element={<Story />} />
