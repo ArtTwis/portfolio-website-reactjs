@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import AppThemeColor from "../../../AppThemeColor";
 import { SocialMedia } from "./Data/SocialMedia";
-import { firebaseDB } from "../../../firebase/firebase-config";
-import { collection, getDocs } from "@firebase/firestore";
 import TypingText from "./TypingText";
 import DeveloperImageDark from "../../../Assets/Images/svg/Developer1-dark.svg";
 import DeveloperImageLight from "../../../Assets/Images/svg/Developer1-light.svg";
+import Constant from "../../../Constant/constant.json"
 import "./css/HomeComponentStyle.css";
 
 const Header = () => {
@@ -20,34 +19,13 @@ const Header = () => {
     dangerColor,
   } = AppThemeColor[app_theme];
 
-  const [recruitmentStatus, setRecruitmentStatus] = useState("");
+  const [recruitmentStatus, setRecruitmentStatus] = useState(Constant.recruitmentStatus);
 
-  const [resumeLink, setResumeLink] = useState("#");
+  const [resumeLink, setResumeLink] = useState(Constant.resumeLink);
 
   // const [error, setError] = useState(false);
 
   const [screenSize, setscreenSize] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const recruitmentCollectionRef = collection(firebaseDB, "recruitment");
-
-    const resumeCollectionRef = collection(firebaseDB, "resume");
-
-    (async () => {
-      const recruitmentData = await getDocs(recruitmentCollectionRef);
-
-      setRecruitmentStatus(
-        recruitmentData._snapshot.docs.keyedMap.root.value.data.value.mapValue
-          .fields.status.stringValue
-      );
-
-      const resumeData = await getDocs(resumeCollectionRef);
-      setResumeLink(
-        resumeData._snapshot.docs.keyedMap.root.value.data.value.mapValue.fields
-          .link.stringValue
-      );
-    })();
-  }, []);
 
   return (
     <header className='header-section'>

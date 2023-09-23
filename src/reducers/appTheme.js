@@ -1,5 +1,5 @@
 const appThemeReducer = (
-  state = window.localStorage.getItem('theme'),
+  state = window.localStorage.getItem('theme') ?  window.localStorage.getItem('theme') : "dark",
   action
 ) => {
   switch (action.type) {

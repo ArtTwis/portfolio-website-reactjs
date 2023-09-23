@@ -7,10 +7,6 @@ import SkillSet from "./Components/SkillSet";
 import Projects from "./Components/Projects";
 
 const Home = () => {
-  useEffect(() => {
-    localStorage.setItem("theme", "dark");
-  }, [])
-  
   return (
     <Base>
       <Header />

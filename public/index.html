@@ -57,6 +57,9 @@
     <!-- Scripting -->
     <script>
       window.addEventListener('scroll', () => {
+        // Setting default theme in localStorage
+        localStorage.setItem("theme", "dark");
+
         let reveals = document.querySelectorAll('.reveal');
 
         reveals.forEach((techItem, index) => {
