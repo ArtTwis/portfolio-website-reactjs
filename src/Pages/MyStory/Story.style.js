@@ -14,7 +14,7 @@ export const ImgBox = styled.div`
 
 export const MyImageElement = styled.img`
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 40%;
@@ -24,6 +24,8 @@ export const MyImageElement = styled.img`
 
 export const Content = styled.div`
   color: whitesmoke;
+  font-size: 20px;
+  letter-spacing: 1px;
   padding: 50px;
   text-align: left;
 `;

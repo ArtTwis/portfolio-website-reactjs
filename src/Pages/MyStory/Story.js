@@ -18,83 +18,21 @@ const Story = () => {
             <MyImageElement src={myImage} alt='Myself' />
           </ImgBox>
           <Content className='content'>
-            <h2 style={{ color: primaryColor }}>I'm Twinkle</h2>
+            <h2 style={{ color: primaryColor }}>Hello, I'm Twinkle</h2>
             <p style={{ color: textColor }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut
-              nemo animi officiis molestias soluta optio dicta ducimus quisquam
-              obcaecati assumenda vel amet dolore, modi placeat excepturi
-              tempora rem repellat ipsa ipsam aliquam maiores reprehenderit.
-              Dolores possimus pariatur a, assumenda veritatis culpa.
+              A passionate and innovative software engineer with a deep love for technology and a knack for turning complex ideas into elegant, user-friendly software solutions. With 3 years of experience in the industry, I've had the privilege of working on a multiple projects, from building web applications to desktop tools.
             </p>
             <p style={{ color: textColor }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut
-              nemo animi officiis molestias soluta optio dicta ducimus quisquam
-              obcaecati assumenda vel amet dolore, modi placeat excepturi
-              tempora rem repellat ipsa ipsam aliquam maiores reprehenderit.
-              Dolores possimus pariatur a, assumenda veritatis culpa.
+              My journey in the world of software began with a fascination for problem-solving and a desire to create technology that enhances people's lives. Over the years, I've honed my skills in various programming languages and I'm always excited to dive into new technologies to stay at the forefront of the ever-evolving tech landscape.
             </p>
             <p style={{ color: textColor }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut
-              nemo animi officiis molestias soluta optio dicta ducimus quisquam
-              obcaecati assumenda vel amet dolore, modi placeat excepturi
-              tempora rem repellat ipsa ipsam aliquam maiores reprehenderit.
-              Dolores possimus pariatur a, assumenda veritatis culpa.
+              My hobbies are Gardening, Listening music, Home decor and Travelling to diffrent areas. Along with this, I also like cooking. I love friends’ trips and family outings but solo travelling brings me the real adventure and thrill to venture into new places all by myself.
             </p>
             <p style={{ color: textColor }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut
-              nemo animi officiis molestias soluta optio dicta ducimus quisquam
-              obcaecati assumenda vel amet dolore, modi placeat excepturi
-              tempora rem repellat ipsa ipsam aliquam maiores reprehenderit.
-              Dolores possimus pariatur a, assumenda veritatis culpa.
+              When I'm not immersed in code, you'll likely find me exploring the latest developments in technology or contributing to open-source projects and I'm always eager to mentor aspiring developers and share my knowledge.
             </p>
             <p style={{ color: textColor }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut
-              nemo animi officiis molestias soluta optio dicta ducimus quisquam
-              obcaecati assumenda vel amet dolore, modi placeat excepturi
-              tempora rem repellat ipsa ipsam aliquam maiores reprehenderit.
-              Dolores possimus pariatur a, assumenda veritatis culpa.
-            </p>
-            <p style={{ color: textColor }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut
-              nemo animi officiis molestias soluta optio dicta ducimus quisquam
-              obcaecati assumenda vel amet dolore, modi placeat excepturi
-              tempora rem repellat ipsa ipsam aliquam maiores reprehenderit.
-              Dolores possimus pariatur a, assumenda veritatis culpa.
-            </p>
-            <p style={{ color: textColor }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut
-              nemo animi officiis molestias soluta optio dicta ducimus quisquam
-              obcaecati assumenda vel amet dolore, modi placeat excepturi
-              tempora rem repellat ipsa ipsam aliquam maiores reprehenderit.
-              Dolores possimus pariatur a, assumenda veritatis culpa.
-            </p>
-            <p style={{ color: textColor }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut
-              nemo animi officiis molestias soluta optio dicta ducimus quisquam
-              obcaecati assumenda vel amet dolore, modi placeat excepturi
-              tempora rem repellat ipsa ipsam aliquam maiores reprehenderit.
-              Dolores possimus pariatur a, assumenda veritatis culpa.
-            </p>
-            <p style={{ color: textColor }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut
-              nemo animi officiis molestias soluta optio dicta ducimus quisquam
-              obcaecati assumenda vel amet dolore, modi placeat excepturi
-              tempora rem repellat ipsa ipsam aliquam maiores reprehenderit.
-              Dolores possimus pariatur a, assumenda veritatis culpa.
-            </p>
-            <p style={{ color: textColor }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut
-              nemo animi officiis molestias soluta optio dicta ducimus quisquam
-              obcaecati assumenda vel amet dolore, modi placeat excepturi
-              tempora rem repellat ipsa ipsam aliquam maiores reprehenderit.
-              Dolores possimus pariatur a, assumenda veritatis culpa.
-            </p>
-            <p style={{ color: textColor }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aut
-              nemo animi officiis molestias soluta optio dicta ducimus quisquam
-              obcaecati assumenda vel amet dolore, modi placeat excepturi
-              tempora rem repellat ipsa ipsam aliquam maiores reprehenderit.
-              Dolores possimus pariatur a, assumenda veritatis culpa.
+              Feel free to reach out to me at <a href="mailto:art.twis@gmail.com">art.twis@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/goyaltwinkle/">LinkedIn</a> / <a href="https://github.com/ArtTwis">Github</a> , and let's start a conversation about how I can contribute to your next exciting project!
             </p>
           </Content>
         </StorySection>
