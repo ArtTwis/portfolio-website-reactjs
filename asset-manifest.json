@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b472c12.css",
-    "main.js": "/static/js/main.92088a84.js",
-    "static/media/coding2.jpg": "/static/media/coding2.4478592a9b672b1db2ac.jpg",
-    "static/media/coding.jpg": "/static/media/coding.b558a606eca0c78402ed.jpg",
-    "static/media/coding3.jpg": "/static/media/coding3.a2c4e9a08715f4604091.jpg",
-    "static/media/Twinkle_Image.jpg": "/static/media/Twinkle_Image.c31b0bc86c098489b318.jpg",
-    "static/media/Developer1-dark.svg": "/static/media/Developer1-dark.9496ca9533f30bd7c9f3d710e47b0e78.svg",
-    "static/media/Developer1-light.svg": "/static/media/Developer1-light.2472d8714c2592ad64ccf3cc04f2c9a9.svg",
-    "static/media/postman-icon.svg": "/static/media/postman-icon.d79cf825d61e0e9f041fec061e9e44eb.svg",
-    "index.html": "/index.html",
-    "static/media/expressjs-icon.svg": "/static/media/expressjs-icon.e0b7040ee6b1db5139a407534cc2a377.svg",
-    "static/media/tailwind-icon.svg": "/static/media/tailwind-icon.91bbceb2f699f8793419eb792ad01542.svg",
-    "main.2b472c12.css.map": "/static/css/main.2b472c12.css.map",
-    "main.92088a84.js.map": "/static/js/main.92088a84.js.map"
+    "main.css": "./static/css/main.2b472c12.css",
+    "main.js": "./static/js/main.9438383d.js",
+    "static/media/coding2.jpg": "./static/media/coding2.4478592a9b672b1db2ac.jpg",
+    "static/media/coding.jpg": "./static/media/coding.b558a606eca0c78402ed.jpg",
+    "static/media/coding3.jpg": "./static/media/coding3.a2c4e9a08715f4604091.jpg",
+    "static/media/Twinkle_Image.jpg": "./static/media/Twinkle_Image.c31b0bc86c098489b318.jpg",
+    "static/media/Developer1-dark.svg": "./static/media/Developer1-dark.9496ca9533f30bd7c9f3d710e47b0e78.svg",
+    "static/media/Developer1-light.svg": "./static/media/Developer1-light.2472d8714c2592ad64ccf3cc04f2c9a9.svg",
+    "static/media/postman-icon.svg": "./static/media/postman-icon.d79cf825d61e0e9f041fec061e9e44eb.svg",
+    "index.html": "./index.html",
+    "static/media/expressjs-icon.svg": "./static/media/expressjs-icon.e0b7040ee6b1db5139a407534cc2a377.svg",
+    "static/media/tailwind-icon.svg": "./static/media/tailwind-icon.91bbceb2f699f8793419eb792ad01542.svg",
+    "main.2b472c12.css.map": "./static/css/main.2b472c12.css.map",
+    "main.9438383d.js.map": "./static/js/main.9438383d.js.map"
   },
   "entrypoints": [
     "static/css/main.2b472c12.css",
-    "static/js/main.92088a84.js"
+    "static/js/main.9438383d.js"
   ]
 }
