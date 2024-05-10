@@ -104,7 +104,7 @@ const Footer = () => {
                   <a
                     href='mailto:art.twis@gmail.com'
                     style={{ color: `${textColor}` }}>
-                    art.twis@gmail.com
+                    twinkle.goyal0786@gmail.com
                   </a>
                 </p>
               </li>

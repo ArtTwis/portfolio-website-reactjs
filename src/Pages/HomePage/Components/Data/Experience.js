@@ -3,7 +3,7 @@ export const Experience = [
     title: "Software Engineer",
     organization: "In Time Tec Visionsoft Pvt. Ltd.",
     location: "Jaipur (Rajasthan)",
-    period: "Sep 2021 - Present, 1 Year 6 Month",
+    period: "Sep 2021 - Present, 2 Year 8 Month",
     project: "Truckstop Project ( .NET MVC Pattern )",
     description:
       "Worked in Loadpay squad where I mantain all pay related services of Truckstop",
