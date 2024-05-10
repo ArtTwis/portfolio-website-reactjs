@@ -111,7 +111,7 @@ const Career = () => {
                           <p className="eventwhen" style={{ color: textColor }}>
                             {exp.period}
                           </p>
-                          <p className="event-title" style={{ color: primaryColor }}>
+                          <p className="event-title" style={{ color: textColor }}>
                             Projects
                           </p>
                           {exp.projects.map((project) => {
