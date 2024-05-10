@@ -574,18 +574,25 @@
 #career .card .exp-content .timeline .event .event-headline .event-title,
 #career .card .exp-content .timeline .event .event-headline .event-location {
   letter-spacing: 1px;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 #career .card .edu-content .timeline .event .event-headline .event-course,
 #career .card .edu-content .timeline .event .event-headline .eventwhen,
-#career .card .exp-content .timeline .event .event-headline .event-project,
 #career .card .exp-content .timeline .event .event-headline .event-keyword,
 #career .card .exp-content .timeline .event .event-headline .eventwhen {
   letter-spacing: 0.5px;
   font-size: 0.8em;
 }
 
+#career .card .exp-content .timeline .event .event-headline .event-project {
+  letter-spacing: 0.5px;
+  font-size: 1em;
+}
+
+#career .card .exp-content .timeline .event .event-headline .project-container {
+  margin: 0px 1.5rem;
+}
 /* --------------------------------------------------------------------- */
 
 .relative {

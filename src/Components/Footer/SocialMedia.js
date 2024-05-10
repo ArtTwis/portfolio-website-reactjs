@@ -2,26 +2,26 @@ export const SocialMedia = [
     {
         platform: 'LinkedIn',
         cname: 'fab fa-linkedin',
-        href: '#',
+        href: 'https://www.linkedin.com/in/goyaltwinkle/',
     },
     {
         platform: 'Facebook',
         cname: 'fab fa-facebook-f',
-        href: '#',
+        href: 'https://www.facebook.com/twinkle.goyal786?mibextid=LQQJ4d',
     },
     {
         platform: 'Instagram',
         cname: 'fab fa-instagram',
-        href: '#',
+        href: 'https://instagram.com/swe_twinkle_goyal',
     },
     {
         platform: 'WhatsApp',
         cname: 'fab fa-whatsapp',
-        href: '#',
+        href: 'https://wa.link/wst0dn',
     },
     {
         platform: 'Twitter',
         cname: 'fab fa-twitter',
-        href: '#',
+        href: 'https://instagram.com/arttwis',
     },
 ];

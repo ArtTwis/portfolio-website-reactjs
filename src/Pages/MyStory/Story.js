@@ -20,7 +20,7 @@ const Story = () => {
           <Content className='content'>
             <h2 style={{ color: primaryColor }}>Hello, I'm Twinkle</h2>
             <p style={{ color: textColor }}>
-              A passionate and innovative software engineer with a deep love for technology and a knack for turning complex ideas into elegant, user-friendly software solutions. With 3 years of experience in the industry, I've had the privilege of working on a multiple projects, from building web applications to desktop tools.
+              A passionate and innovative software engineer with a deep love for technology and a knack for turning complex ideas into elegant, user-friendly software solutions. With 5+ years of experience in the industry, I've the privilege of working on a multiple projects, from building web applications to desktop tools.
             </p>
             <p style={{ color: textColor }}>
               My journey in the world of software began with a fascination for problem-solving and a desire to create technology that enhances people's lives. Over the years, I've honed my skills in various programming languages and I'm always excited to dive into new technologies to stay at the forefront of the ever-evolving tech landscape.
@@ -32,7 +32,7 @@ const Story = () => {
               When I'm not immersed in code, you'll likely find me exploring the latest developments in technology or contributing to open-source projects and I'm always eager to mentor aspiring developers and share my knowledge.
             </p>
             <p style={{ color: textColor }}>
-              Feel free to reach out to me at <a href="mailto:art.twis@gmail.com">art.twis@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/goyaltwinkle/">LinkedIn</a> / <a href="https://github.com/ArtTwis">Github</a> , and let's start a conversation about how I can contribute to your next exciting project!
+              Feel free to reach out to me at <a href="mailto:twinkle.goyal0786@gmail.com">twinkle.goyal0786@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/goyaltwinkle/">LinkedIn</a> / <a href="https://github.com/ArtTwis">Github</a> , and let's start a conversation about how I can contribute to your next exciting project!
             </p>
           </Content>
         </StorySection>
