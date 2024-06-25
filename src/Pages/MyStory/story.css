@@ -20,7 +20,7 @@
   content: "";
   height: calc(100% + 10px);
   width: calc(100% + 10px);
-  border: 8px dashed #00e4b2;
+  border: 8px dashed #a1ff1a;
   top: -5px;
   left: -5px;
   border-radius: inherit;
@@ -34,8 +34,4 @@
   100% {
     transform: rotateZ(360deg);
   }
-}
-
-.content-container {
-  font-family: var(--font-Signika) !important;
 }
