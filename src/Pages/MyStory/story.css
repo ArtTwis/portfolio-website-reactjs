@@ -1,0 +1,41 @@
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 0px dashed transparent;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  background-image: url("../../Assets/Images/gallery/profilepic.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding: 12px;
+}
+
+.circle:before {
+  position: absolute;
+  content: "";
+  height: calc(100% + 10px);
+  width: calc(100% + 10px);
+  border: 8px dashed #00e4b2;
+  top: -5px;
+  left: -5px;
+  border-radius: inherit;
+}
+
+.circle:before {
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.content-container {
+  font-family: var(--font-Signika) !important;
+}

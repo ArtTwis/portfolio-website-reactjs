@@ -1,7 +1,7 @@
 import React from "react";
 import Base from "../../Base";
-import myImage from "../../Assets/Images/gallery/Twinkle_Image.jpg";
-import { StorySection, ImgBox, MyImageElement, Content } from "./Story.style";
+import './story.css';
+import { StorySection, ImgBox, Content } from "./Story.style";
 import { useSelector } from "react-redux";
 import AppThemeColor from "../../AppThemeColor";
 
@@ -15,21 +15,21 @@ const Story = () => {
       <Base>
         <StorySection>
           <ImgBox>
-            <MyImageElement src={myImage} alt='Myself' />
+            <div className="circle"></div>
           </ImgBox>
-          <Content className='content'>
+          <Content className='content-container'>
             <h2 style={{ color: primaryColor }}>Hello, I'm Twinkle</h2>
             <p style={{ color: textColor }}>
-              A passionate and innovative software engineer with a deep love for technology and a knack for turning complex ideas into elegant, user-friendly software solutions. With 5+ years of experience in the industry, I've the privilege of working on a multiple projects, from building web applications to desktop tools.
+              I am a passionate and innovative software engineer with over 5 years of experience. I specialize in translating complex ideas into elegant, user-friendly software solutions. My expertise spans web application development to desktop tool design, contributing to diverse projects across the industry.
             </p>
             <p style={{ color: textColor }}>
-              My journey in the world of software began with a fascination for problem-solving and a desire to create technology that enhances people's lives. Over the years, I've honed my skills in various programming languages and I'm always excited to dive into new technologies to stay at the forefront of the ever-evolving tech landscape.
+              My journey into software engineering started with a passion for problem-solving and a dedication to developing technology that enhances lives. Throughout my career, I've honed my skills across multiple programming languages and remain committed to staying current with emerging technologies to excel in the evolving tech industry.
             </p>
             <p style={{ color: textColor }}>
-              My hobbies are Gardening, Listening music, Home decor and Travelling to diffrent areas. Along with this, I also like cooking. I love friends’ trips and family outings but solo travelling brings me the real adventure and thrill to venture into new places all by myself.
+              Outside of coding, I enjoy gardening, music, home decor, and traveling to diverse destinations. Cooking is also a passion of mine. While I cherish trips with loved ones, solo travel fuels my sense of adventure as I explore new places independently.
             </p>
             <p style={{ color: textColor }}>
-              When I'm not immersed in code, you'll likely find me exploring the latest developments in technology or contributing to open-source projects and I'm always eager to mentor aspiring developers and share my knowledge.
+              When not coding, I stay updated on technological advancements and contribute to open-source projects. I am passionate about mentoring aspiring developers and fostering community growth through knowledge sharing.
             </p>
             <p style={{ color: textColor }}>
               Feel free to reach out to me at <a href="mailto:twinkle.goyal0786@gmail.com">twinkle.goyal0786@gmail.com</a> or connect with me on <a href="https://www.linkedin.com/in/goyaltwinkle/">LinkedIn</a> / <a href="https://github.com/ArtTwis">Github</a> , and let's start a conversation about how I can contribute to your next exciting project!
