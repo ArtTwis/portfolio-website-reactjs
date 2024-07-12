@@ -22,31 +22,33 @@ const Projects = () => {
   } = AppThemeColor[app_theme];
 
   return (
-    <section id='projects' className='projects-section'>
-      <div className='container'>
-        <div className='section-header row justify-content-center'>
-          <div className='col-12'>
-            <div className='section-title-header text-center'>
+    <section id="projects" className="projects-section">
+      <div className="container">
+        <div className="section-header row justify-content-center">
+          <div className="col-12">
+            <div className="section-title-header text-center">
               <h1
-                className='projects-section-title'
-                style={{ color: textColor }}>
-                Projects
+                className="projects-section-title"
+                style={{ color: textColor }}
+              >
+                Organisation Projects
               </h1>
             </div>
           </div>
-          <div className='col-12'>
-            <div className='cards'>
+          <div className="col-12">
+            <div className="cards">
               <div
-                className='card card1'
+                className="card card1"
                 style={{
                   backgroundColor: bodyBgColor,
                   borderColor: cardBorderColor,
-                }}>
-                <div className='container'>
-                  <img src={Coding3} alt='Coding' />
+                }}
+              >
+                <div className="container">
+                  <img src={Coding3} alt="Coding" />
                 </div>
-                <div className='details'>
-                  <a href='https://jetmanlabs.com/'>
+                <div className="details">
+                  <a href="https://jetmanlabs.com/">
                     <h3 style={{ color: textColor }}>Jetmanlabs</h3>
                   </a>
                   <p style={{ color: cardBorderColor }}>
@@ -57,16 +59,17 @@ const Projects = () => {
                 </div>
               </div>
               <div
-                className='card card2'
+                className="card card2"
                 style={{
                   backgroundColor: bodyBgColor,
                   borderColor: cardBorderColor,
-                }}>
-                <div className='container'>
-                  <img src={Coding2} alt='new york city' />
+                }}
+              >
+                <div className="container">
+                  <img src={Coding2} alt="new york city" />
                 </div>
-                <div className='details'>
-                  <a href='https://truckstop.com/blog/truckstop-com-launches-loadpay-transactional-payment-network/'>
+                <div className="details">
+                  <a href="https://truckstop.com/blog/truckstop-com-launches-loadpay-transactional-payment-network/">
                     <h3 style={{ color: textColor }}>Truckstop ( Loadpay )</h3>
                   </a>
                   <p style={{ color: cardBorderColor }}>
@@ -77,16 +80,17 @@ const Projects = () => {
                 </div>
               </div>
               <div
-                className='card card3'
+                className="card card3"
                 style={{
                   backgroundColor: bodyBgColor,
                   borderColor: cardBorderColor,
-                }}>
-                <div className='container'>
-                  <img src={Coding1} alt='paris' />
+                }}
+              >
+                <div className="container">
+                  <img src={Coding1} alt="paris" />
                 </div>
-                <div className='details'>
-                  <a href='#'>
+                <div className="details">
+                  <a href="#">
                     <h3 style={{ color: textColor }}>HP ( Net Promo Frame )</h3>
                   </a>
                   <p style={{ color: cardBorderColor }}>
@@ -99,11 +103,12 @@ const Projects = () => {
             </div>
           </div>
           {expandMoreProjects && (
-            <div className='col-12'>
-              <div className='section-title-header text-center mt-3'>
+            <div className="col-12">
+              <div className="section-title-header text-center mt-3">
                 <button
-                  className='btn project-see-more-btn'
-                  style={{ background: primaryColor, color: commonDarkColor }}>
+                  className="btn project-see-more-btn"
+                  style={{ background: primaryColor, color: commonDarkColor }}
+                >
                   See More
                 </button>
               </div>
