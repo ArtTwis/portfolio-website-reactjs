@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import Base from "../../Base";
 import Header from "./Components/Header";
 import Passion from "./Components/Passion";

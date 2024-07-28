@@ -1,8 +1,8 @@
 import React from "react";
 import AppThemeColor from "../../../AppThemeColor";
+import { useSelector } from "react-redux";
 import { Education } from "./Data/Education";
 import { Experience } from "./Data/Experience";
-import { useSelector } from "react-redux";
 
 const Career = () => {
   const app_theme = useSelector((state) => state.appTheme);
@@ -28,7 +28,8 @@ const Career = () => {
               className="edu-card card"
               style={{
                 backgroundColor: bodyBgColor,
-              }}>
+              }}
+            >
               <h2 style={{ color: primaryColor }}>Education</h2>
               <div className="edu-content">
                 <ul
@@ -36,7 +37,8 @@ const Career = () => {
                   style={{
                     borderColor: primaryColor,
                     boxShadow: `0 1px 3px  ${cardBorderColor}`,
-                  }}>
+                  }}
+                >
                   {Education.map((edu, index) => {
                     return (
                       <li
@@ -44,21 +46,25 @@ const Career = () => {
                         className={`event  ${
                           app_theme === "dark" ? "eduDark" : "eduLight"
                         }`}
-                        style={{ borderColor: cardBorderColor }}>
+                        style={{ borderColor: cardBorderColor }}
+                      >
                         <div className="event-headline">
                           <p
                             className="event-title"
-                            style={{ color: textColor }}>
+                            style={{ color: textColor }}
+                          >
                             {edu.institute}
                           </p>
                           <p
                             className="event-city"
-                            style={{ color: textColor }}>
+                            style={{ color: textColor }}
+                          >
                             {edu.city}
                           </p>
                           <p
                             className="event-course"
-                            style={{ color: textColor }}>
+                            style={{ color: textColor }}
+                          >
                             {edu.course}
                           </p>
                           <p className="eventwhen" style={{ color: textColor }}>
@@ -77,7 +83,8 @@ const Career = () => {
               className="exp-card card"
               style={{
                 backgroundColor: bodyBgColor,
-              }}>
+              }}
+            >
               <h2 style={{ color: primaryColor }}>Experience</h2>
               <div className="exp-content">
                 <ul
@@ -85,7 +92,8 @@ const Career = () => {
                   style={{
                     borderColor: primaryColor,
                     boxShadow: `0 1px 3px  ${cardBorderColor}`,
-                  }}>
+                  }}
+                >
                   {Experience.map((exp, index) => {
                     return (
                       <li
@@ -93,25 +101,31 @@ const Career = () => {
                         className={`event  ${
                           app_theme === "dark" ? "eduDark" : "eduLight"
                         }`}
-                        style={{ borderColor: cardBorderColor }}>
+                        style={{ borderColor: cardBorderColor }}
+                      >
                         <div className="event-headline">
                           <p className="event-org" style={{ color: textColor }}>
                             {exp.organization}
                           </p>
                           <p
                             className="event-location"
-                            style={{ color: textColor }}>
+                            style={{ color: textColor }}
+                          >
                             {exp.location}
                           </p>
                           <p
                             className="event-title"
-                            style={{ color: primaryColor }}>
+                            style={{ color: primaryColor }}
+                          >
                             {exp.title}
                           </p>
                           <p className="eventwhen" style={{ color: textColor }}>
                             {exp.period}
                           </p>
-                          <p className="event-title" style={{ color: textColor }}>
+                          <p
+                            className="event-title"
+                            style={{ color: textColor }}
+                          >
                             Projects
                           </p>
                           {exp.projects.map((project) => {
@@ -119,17 +133,23 @@ const Career = () => {
                               <div className="project-container">
                                 <p
                                   className="event-project"
-                                  style={{ color: primaryColor, fontWeight: "bold" }}>
+                                  style={{
+                                    color: primaryColor,
+                                    fontWeight: "bold",
+                                  }}
+                                >
                                   {project.client} - {project.module}
                                 </p>
                                 <p
                                   className="event-keyword"
-                                  style={{ color: textColor }}>
+                                  style={{ color: textColor }}
+                                >
                                   {project.description}
                                 </p>
                                 <p
                                   className="event-keyword"
-                                  style={{ color: textColor }}>
+                                  style={{ color: textColor }}
+                                >
                                   {project.keyword}
                                 </p>
                               </div>

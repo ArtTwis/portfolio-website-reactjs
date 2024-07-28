@@ -5,6 +5,7 @@ import Base from "./Base";
 import Home from "./Pages/HomePage/Home";
 import Story from "./Pages/MyStory/Story";
 import CareerPage from "./Pages/Career/Career";
+import GearsPage from "./Pages/Gears/Gears";
 import { createStore } from "redux";
 import rootReducer from "./reducers";
 import { Provider } from "react-redux";
@@ -18,14 +19,14 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <Provider store={store}>
-    <Router basename='/portfolio-website-reactjs'>
+    <Router basename="/portfolio-website-reactjs">
       <Routes>
-        <Route path='/' exact element={<Home />} />
-        <Route path='/mystory' element={<Story />} />
-        <Route path='/career' element={<CareerPage />} />
-        <Route path='/projects' element={<Base />} />
-        <Route path='/blogs' element={<Base />} />
-        <Route path='/contactme' element={<Base />} />
+        <Route path="/" exact element={<Home />} />
+        <Route path="/mystory" element={<Story />} />
+        <Route path="/career" element={<CareerPage />} />
+        <Route path="/gears" element={<GearsPage />} />
+        <Route path="/blogs" element={<Base />} />
+        <Route path="/contactme" element={<Base />} />
       </Routes>
     </Router>
   </Provider>
