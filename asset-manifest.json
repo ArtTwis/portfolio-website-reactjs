@@ -1,22 +1,37 @@
 {
   "files": {
-    "main.css": "/portfolio-website-reactjs/static/css/main.0ffa3115.css",
-    "main.js": "/portfolio-website-reactjs/static/js/main.36355295.js",
+    "main.css": "/portfolio-website-reactjs/static/css/main.80de20a2.css",
+    "main.js": "/portfolio-website-reactjs/static/js/main.418218eb.js",
     "static/media/coding2.jpg": "/portfolio-website-reactjs/static/media/coding2.4478592a9b672b1db2ac.jpg",
     "static/media/coding.jpg": "/portfolio-website-reactjs/static/media/coding.b558a606eca0c78402ed.jpg",
     "static/media/coding3.jpg": "/portfolio-website-reactjs/static/media/coding3.a2c4e9a08715f4604091.jpg",
+    "static/media/macbookAirM3.jpeg": "/portfolio-website-reactjs/static/media/macbookAirM3.27ef25b878b88de72327.jpeg",
+    "static/media/benqGW2485TC.jpg": "/portfolio-website-reactjs/static/media/benqGW2485TC.3f7b5a34c63d9be6841c.jpg",
     "static/media/profilepic.png": "/portfolio-website-reactjs/static/media/profilepic.cd60190b0566c1a6ca33.png",
+    "static/media/iWatchSeries3-2.jpg": "/portfolio-website-reactjs/static/media/iWatchSeries3-2.38e79548e30efdb8cc35.jpg",
+    "static/media/iPhone11.jpg": "/portfolio-website-reactjs/static/media/iPhone11.fb5fe27af457cec109be.jpg",
+    "static/media/appleAirpod2ndGen.jpeg": "/portfolio-website-reactjs/static/media/appleAirpod2ndGen.5b766b1a7e60760e346e.jpeg",
+    "static/media/readGearHeadphones.jpg": "/portfolio-website-reactjs/static/media/readGearHeadphones.7b1dff1f56946134a5bc.jpg",
+    "static/media/applePencil2ndGen.jpeg": "/portfolio-website-reactjs/static/media/applePencil2ndGen.36e12b6d82f560ebe876.jpeg",
+    "static/media/ExternalHardDisk.jpg": "/portfolio-website-reactjs/static/media/ExternalHardDisk.db5cda9b05baf5c3d8b5.jpg",
+    "static/media/iPadStand.jpg": "/portfolio-website-reactjs/static/media/iPadStand.41e5a77e1e2bf92e7cf9.jpg",
+    "static/media/iPad4thGen.jpg": "/portfolio-website-reactjs/static/media/iPad4thGen.23aa2a83296ef2a501f0.jpg",
     "static/media/Developer1-dark.svg": "/portfolio-website-reactjs/static/media/Developer1-dark.9496ca9533f30bd7c9f3d710e47b0e78.svg",
     "static/media/Developer1-light.svg": "/portfolio-website-reactjs/static/media/Developer1-light.2472d8714c2592ad64ccf3cc04f2c9a9.svg",
+    "static/media/miSmartSpeaker.jpg": "/portfolio-website-reactjs/static/media/miSmartSpeaker.a2005cf929c497d552c0.jpg",
+    "static/media/macbookAirEarly2015-2.jpg": "/portfolio-website-reactjs/static/media/macbookAirEarly2015-2.d3780e39e4576ea79c5c.jpg",
+    "static/media/amazonBasicMultiportHub.jpg": "/portfolio-website-reactjs/static/media/amazonBasicMultiportHub.f8934e8cb8946b74ac18.jpg",
+    "static/media/amazonBasicDualMonitorArm.jpg": "/portfolio-website-reactjs/static/media/amazonBasicDualMonitorArm.e82115f188a3aff9b066.jpg",
     "static/media/postman-icon.svg": "/portfolio-website-reactjs/static/media/postman-icon.648705b5f6469f0767a4736d07313ffe.svg",
+    "static/media/miTableLamp.jpg": "/portfolio-website-reactjs/static/media/miTableLamp.dc3fef73dd8aeb553a9e.jpg",
     "index.html": "/portfolio-website-reactjs/index.html",
     "static/media/expressjs-icon.svg": "/portfolio-website-reactjs/static/media/expressjs-icon.e0b7040ee6b1db5139a407534cc2a377.svg",
     "static/media/tailwind-icon.svg": "/portfolio-website-reactjs/static/media/tailwind-icon.91bbceb2f699f8793419eb792ad01542.svg",
-    "main.0ffa3115.css.map": "/portfolio-website-reactjs/static/css/main.0ffa3115.css.map",
-    "main.36355295.js.map": "/portfolio-website-reactjs/static/js/main.36355295.js.map"
+    "main.80de20a2.css.map": "/portfolio-website-reactjs/static/css/main.80de20a2.css.map",
+    "main.418218eb.js.map": "/portfolio-website-reactjs/static/js/main.418218eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ffa3115.css",
-    "static/js/main.36355295.js"
+    "static/css/main.80de20a2.css",
+    "static/js/main.418218eb.js"
   ]
 }
